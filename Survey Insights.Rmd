@@ -1,22 +1,45 @@
 ---
-title: "Survey Insights"
+title: "Food Sustainability Survey Insights"
 author: "Elham Ali"
 date: "2023-07-27"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+
+
+# Install necessary packages
+install.packages("dplyr")
+
+# Load necessary libraries
+library(dplyr)
+library(readxl)
 ```
 
-## R Markdown
+## Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This report explores key data insights from a food sustainability survey administered to 1561 respondents who are either Registered Dietitian Nutritionist (RDN) or a Dietetic Technician, Registered (DTR) about current strategies, barriers, and competence in integrating food sustainability practices in their practices. 
+
+The survey is administered by [Food + Planet](https://foodandplanet.org/) to understand the gaps in embedding sustainability in dietitian curricula. 
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+## Methods
+
+
+# Results
+## Graph 1: Average number of dietitians with sustainability education at the graduate levels
+
+```{r setup, include=FALSE}
+
+# Read the datasets
+dataset1 <- read_excel("dataset 1.xlsx")
+dataset2 <- read_excel("dataset 2.xlsx")
 ```
 
 ## Including Plots
@@ -24,7 +47,7 @@ summary(cars)
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
