@@ -1,7 +1,7 @@
 # Install necessary packages
-install.packages("readxl")
-install.packages("dplyr")
-install.packages("tidyverse")
+# install.packages("readxl")
+# install.packages("dplyr")
+# install.packages("tidyverse")
 
 # Load necessary libraries
 library(readxl)
